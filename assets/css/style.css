@@ -1,0 +1,487 @@
+body {
+    background-color: #D6F5FC;
+}
+
+#welcome {
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    color: #58A5DC;
+    margin: auto;
+}
+
+#title {
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #0F3085;
+    text-shadow: 0px 3px 5px grey;
+}
+
+#heading {
+  font-size: 40px;
+  text-decoration: underline;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #0F3085;
+}
+
+.heading-text {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.description {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #0F3085;
+}
+
+.about-description {
+  font-family: 'Reem Kufi', sans-serif;
+  color: #0F3085;
+  font-size: 25px;
+}
+
+.button {
+    background-color: #8DC8E9;
+    border-radius: 40px;
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+  }
+
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.button:hover {
+    box-shadow: 0px 5px #0F3085;
+    transform: translateY(-5px);
+}
+
+.rightArrow {
+    animation: pulseRight 3s infinite;
+}
+
+.leftArrow {
+  animation: pulseLeft 3s infinite;
+  left: 100px;
+}
+
+@keyframes pulseRight {
+  50% {
+    transform: rotate(20deg) translateY(40px);
+  }
+}
+
+@keyframes pulseLeft {
+  50% {
+    transform: rotate(-20deg) translateY(40px);
+  }
+}
+
+/* Flip card container */
+/* Flip card animation credit to https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.flip-card-home {
+    background-color: transparent;
+    width: 411px;
+    height: 411px;
+  }
+
+  .flip-card-world {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  /* Flip card animation credit to https://www.w3schools.com/howto/howto_css_flip_card.asp */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Flip card animation credit to https://www.w3schools.com/howto/howto_css_flip_card.asp */
+  .flip-card-home:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-world:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  /* Flip card animation credit to https://www.w3schools.com/howto/howto_css_flip_card.asp */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the back side */
+  /* Flip card animation credit to https://www.w3schools.com/howto/howto_css_flip_card.asp */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* Hide the fact when back is not displayed */
+  .flip-card-back .fact {
+    display: none;
+  }
+
+  .special-penguin .fact {
+    display: none;
+  }
+
+  /* Display the fact on hover */
+  .flip-card-home:hover .fact {
+    display: block;
+  }
+
+  .flip-card-world:hover .fact {
+    display: block;
+  }
+
+  .special-penguin:hover .fact {
+    display: block;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 60%;
+  }
+  
+  .right {
+    width: 40%;
+  }
+
+#hover-over-me {
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+#world {
+  height: 1150px;
+  width: 1150px;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.orientation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.arrows {
+  margin-top: 370px;
+  width: 80px;
+  height: 230px;
+  z-index: 1;
+}
+
+.penguin {
+    width: 200px;
+}
+
+#home-fact {
+    position: absolute;
+    left: -80px;
+    top: 0px;
+}
+
+#king-one {
+    transform: translateY(-1250px) translateX(450px);
+    z-index: 2;
+}
+
+#king-one-fact {
+  position: absolute;
+  right: -180px;
+  top: -100px;
+}
+
+#egg-scene-one {
+    transform: translateY(-950px) translateX(220px) rotate(-40deg);
+}
+
+#egg-scene-one-fact {
+  position: absolute;
+  right: -240px;
+  top: 100px;
+}
+
+#tip {
+  transform: translateY(-1300px) translateX(50px);
+}
+
+#difference {
+  transform: translateY(-1450px) translateX(340px) rotate(-5deg);
+}
+
+#difference-fact {
+  position: absolute;
+  right: -350px;
+  top: -50px;
+  transform: rotate(5deg);
+}
+
+#gentoo-one {
+  transform: translateY(-1780px) translateX(220px) rotate(-10deg) scaleX(-1);
+}
+
+#gentoo-one-fact {
+  position: absolute;
+  left: 150px;
+  top: -100px;
+  transform: scaleX(-1) rotate(10deg);
+}
+
+#adelie-one {
+  animation: lift-down 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#adelie-one:hover {
+  position: relative;
+  animation: lift-up 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lift-up {
+  from {
+    transform: translateY(-1230px) translateX(-680px) rotate(-160deg);
+  }
+  to {
+    transform: translateY(-1170px) translateX(-700px) rotate(-160deg);
+  }
+}
+
+@keyframes lift-down {
+  from {
+    transform: translateY(-1170px) translateX(-700px) rotate(-160deg);
+  }
+  to {
+    transform: translateY(-1230px) translateX(-680px) rotate(-160deg);
+  }
+}
+
+#cover {
+  transform: translateY(-1535px) translateX(350px) rotate(80deg);
+  z-index: 10;
+}
+
+#balloon-fact {
+  position: absolute;
+  left: -210px;
+  top: 100px;
+}
+
+.slide-in-up {
+  animation: slideInUp;
+  animation-timing-function: ease-out;
+  animation-duration: 1.2s;
+}
+
+.slide-in-down {
+  animation: slideInDown;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+#proposal {
+  transform: translateY(-2000px) translateX(160px) rotate(-40deg);
+}
+
+#proposal-fact {
+  position: absolute;
+  left: 250px;
+  top: 70px;
+  z-index: 3;
+}
+
+#emperor-one {
+  transform: translateY(-2940px) translateX(340px) rotate(-10deg) scaleX(-1);
+}
+
+#emperor-fact-one {
+  position: absolute;
+  transform: scaleX(-1) rotate(10deg);
+  right: -230px;
+  top: -100px;
+}
+
+#macaroni-one {
+  z-index: 2;
+  transform: translateY(-2640px) translateX(-70px) rotate(-80deg);
+}
+
+#macaroni-one-fact {
+  position: absolute;
+  left: 170px;
+  top: -100px;
+}
+
+#macaroni-two {
+  transform: translateY(-2050px) translateX(600px) rotate(160deg);
+}
+
+#macaroni-two-fact {
+  position: absolute;
+  left: 200px;
+  top: -80px;
+}
+
+#african-one {
+  z-index: 1;
+  transform: translateY(-2900px) translateX(-100px) rotate(-80deg) scaleX(-1);
+}
+
+#african-one-fact {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 160px;
+  top: -80px;
+}
+
+#pingu {
+  transform: translateY(-3300px) translateX(520px) rotate(40deg);
+  z-index: 2;
+}
+
+#pingu-fact {
+  position: absolute;
+  left: 190px;
+  top: 30px;
+}
+
+#adelie-two {
+  transform: translateY(-3650px) translateX(660px) rotate(40deg) scaleX(-1);
+  z-index: 2;
+}
+
+#adelie-two-fact {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 160px;
+  top: -70px;
+}
+
+#macaroni-three {
+  animation: surf-backward 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#macaroni-three:hover {
+  position: relative;
+  animation: surf-forward 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes surf-forward {
+  from {
+    transform: translateY(-2880px) translateX(240px) rotate(120deg);
+  }
+  to {
+    transform: translateY(-2830px) translateX(220px) rotate(120deg);
+  }
+}
+
+@keyframes surf-backward {
+  from {
+    transform: translateY(-2830px) translateX(220px) rotate(120deg);
+  }
+  to {
+    transform: translateY(-2880px) translateX(240px) rotate(120deg);
+  }
+}
+
+#surf-fact {
+  position: absolute;
+  left: -270px;
+  top: -100px;
+}
+
+#happy-feet {
+  transform: translateY(-3940px) translateX(800px) rotate(50deg);
+}
+
+#happy-feet-fact {
+  position: absolute;
+  left: 220px;
+  top: 30px;
+}
+
+#fishing {
+  transform: translateY(-3600px) translateX(550px) rotate(160deg);
+}
+
+#fishing-fact {
+  position: absolute;
+  left: 120px;
+  top: 200px;
+}
+
+#selfie {
+  transform: translateY(-4150px) translateX(650px) rotate(110deg);
+}
+
+#selfie-fact {
+  position: absolute;
+  right: -80px;
+  top: -250px;
+}
+
+#adopt {
+  transform: translateY(-3750px) translateX(850px) rotate(140deg);
+}
+
+#adopt-fact {
+  position: absolute;
+  right: -100px;
+  top: 320px;
+  transform: rotate(20deg);
+}
+
+#madagascar {
+  transform: translateY(-4900px) translateX(960px) rotate(60deg);
+}
+
+#madagascar-fact {
+  position: absolute;
+  right: -470px;
+  top: -80px;
+}
+
+.oops {
+  margin: 0px auto;
+  padding-top: 500px;
+  width: 600px;
+  text-align: center;
+}
+
+.all {
+  width: 8%;
+  justify-content: center; 
+}

@@ -1,0 +1,277 @@
+<html>
+
+<head>
+    <title>Explore Penguin Park</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body scroll="no" style="overflow: hidden" class='slide-in-up coming-home' >
+    <p class='button' id='exit-button' style="position: absolute; top: 0px; right: 30px;">exit</p>
+    <div style="display: inline-flex;">
+        <p id='title' style="margin-left: 30px; margin-right: 45px; float: left;">Penguin Park</p>
+        <div style="margin-top: 17px;">
+            <p class='description' style="font-size: 20px">hover over the penguins to learn more about them!</p>
+            <p class='description' style="font-size: 20px">click the arrows on the bottom corners to explore different
+                parts of the park!</p>
+        </div>
+    </div>
+    <div class='orientation'>
+        <img src="assets/images/leftworldarrow.png" class="arrows leftArrow" onclick="rotateWorldLeft()">
+        <div id='world'>
+            <img src="assets/images/world.png">
+            <div class="flip-card-world" id="king-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/king/normal.png" class='penguin'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/king/active.png" class='penguin'>
+                        <div class="fact">
+                            <img src="assets/images/king/fact.png" id='king-one-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="egg-scene-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/king/egg-scene-normal.png" style='width: 250px'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/king/egg-scene-active.png" style='width: 250px'>
+                        <div class="fact">
+                            <img src="assets/images/king/egg-scene-fact.png" id='egg-scene-one-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="difference">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/difference-one.png" style='width: 300px'>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=Rzv2ho95a80" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/difference-two.png" style='width: 300px'>
+                            <div class="fact">
+                                <img src="assets/images/difference-fact.png" id='difference-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="gentoo-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/gentoo/normal.png" style='width: 190px'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/gentoo/active.png" style='width: 190px'>
+                        <div class="fact">
+                            <img src="assets/images/gentoo/fact-one.png" id='gentoo-one-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="special-penguin" id="adelie-one">
+                <img src="assets/images/adelie/balloons.png" style='width: 150px'>
+                <div class="fact">
+                    <img src="assets/images/adelie/balloon-fact.png" id='balloon-fact'>
+                </div>
+            </div>
+            <img src="assets/images/cover.png" id='cover'>
+            <div class="flip-card-world" id="proposal">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/gentoo/proposal-one.png" style='width: 280px'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/gentoo/proposal-two.png" style='width: 280px'>
+                        <div class="fact">
+                            <img src="assets/images/gentoo/proposal-fact.png" id='proposal-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="emperor-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/emperor/normal.png" style='width: 240px'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/emperor/active.png" style='width: 240px'>
+                        <div class="fact">
+                            <img src="assets/images/emperor/fact-one.png" id='emperor-fact-one'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="macaroni-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/macaroni/normal.png" class='penguin'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/macaroni/active.png" class='penguin'>
+                        <div class="fact">
+                            <img src="assets/images/macaroni/fact-one.png" id='macaroni-one-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="macaroni-two">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/macaroni/protest-one.png" style='width:210px'>
+                    </div>
+                    <a href="https://www.weforum.org/agenda/2020/02/penguin-colony-antarctic-islands-climate-change-environment/" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/macaroni/protest-two.png" style='width:210px'>
+                            <div class="fact">
+                                <img src="assets/images/macaroni/protest-fact.png" id='macaroni-two-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="african-one">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/african/normal.png" class='penguin'>
+                    </div>
+                    <a href="https://www.montereybayaquarium.org/animals/live-cams/penguin-cam" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/african/active.png" class='penguin'>
+                            <div class="fact">
+                                <img src="assets/images/african/fact-one.png" id='african-one-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="pingu">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/pingu-normal.png" class='penguin'>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=K0nCC0sPSes" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/pingu-active.png" class='penguin'>
+                            <div class="fact">
+                                <img src="assets/images/pingu-fact.png" id='pingu-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="adelie-two">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/adelie/normal.png" class='penguin'>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="assets/images/adelie/active.png" class='penguin'>
+                        <div class="fact">
+                            <img src="assets/images/adelie/fact-one.png" id='adelie-two-fact'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="special-penguin" id="macaroni-three">
+                <img src="assets/images/macaroni/surf-one.png" style='width: 250px'>
+                <a href="https://www.sonypictures.com/movies/surfsup" target="_blank">
+                    <div class="fact">
+                        <img src="assets/images/macaroni/surf-fact.png" id='surf-fact'>
+                    </div>
+                </a>
+            </div>
+            <div class="flip-card-world" id="happy-feet">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/normal-feet.png" style='width:220px'>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=C1vgO8fba1U" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/happy-feet.png" style='width:220px'>
+                            <div class="fact">
+                                <img src="assets/images/happy-feet-fact.png" id='happy-feet-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="fishing">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/fishing-one.png" style='width: 280px'>
+                    </div>
+                        <div class="flip-card-back">
+                            <img src="assets/images/fishing-two.png" style='width: 280px'>
+                            <div class="fact">
+                                <img src="assets/images/fishing-fact.png" id='fishing-fact'>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="flip-card-world" id="selfie">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/emperor/photo-one.png" style='width: 300px'>
+                    </div>
+                    <a href="https://www.npr.org/sections/thetwo-way/2018/03/09/592232204/penguins-mug-for-camera-take-a-pretty-great-selfie" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/emperor/photo-two.png" style='width: 300px'>
+                            <div class="fact">
+                                <img src="assets/images/emperor/photo-fact.png" id='selfie-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="adopt">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/emperor/adopt-one.png" style='width: 250px'>
+                    </div>
+                    <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions.aspx" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/emperor/adopt-two.png" style='width: 250px'>
+                            <div class="fact">
+                                <img src="assets/images/emperor/adopt-fact.png" id='adopt-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flip-card-world" id="madagascar">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/adelie/madagascar-one.png" style='width: 330px'>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=2a8PrktN8Z4" target="_blank">
+                        <div class="flip-card-back">
+                            <img src="assets/images/adelie/madagascar-two.png" style='width: 330px'>
+                            <div class="fact">
+                                <img src="assets/images/adelie/madagascar-fact.png" id='madagascar-fact'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/rightworldarrow.png" class="arrows rightArrow" onclick="rotateWorldRight()">
+    </div>
+    <img src="assets/images/tip.png" class="tip" id="tip" onclick="hide()" style="animation-iteration-count: 1;">
+    <div class="oops coming-home-oops">
+        <p class='description' style="font-size: 20px;">oops! looks like you refreshed on this page, causing the animation to push the park out of view. please exit and re-enter the park!</p> 
+        <p class='button' id='exit-button-oops'>exit</p>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
