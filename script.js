@@ -1,12 +1,12 @@
 var turns = 0;
 var world = document.getElementById('world');
 function rotateWorldRight() {
-    turns += 1;
+    turns -= 1;
     world.style.transform = 'rotate(' + (40 * turns) + 'deg)';
     world.style.transition = 'transform 1s ease-in-out';
 };
 function rotateWorldLeft() {
-    turns -= 1;
+    turns += 1;
     world.style.transform = 'rotate(' + (40 * turns) + 'deg)';
     world.style.transition = 'transform 1s ease-in-out';
 };

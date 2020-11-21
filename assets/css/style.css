@@ -223,13 +223,13 @@ body {
 }
 
 #egg-scene-one {
-    transform: translateY(-950px) translateX(220px) rotate(-40deg);
+    transform: translateY(-950px) translateX(220px) rotate(-80deg);
 }
 
 #egg-scene-one-fact {
   position: absolute;
-  right: -240px;
-  top: 100px;
+  right: -250px;
+  top: -100px;
 }
 
 #tip {
@@ -311,13 +311,13 @@ body {
 }
 
 #proposal {
-  transform: translateY(-2000px) translateX(160px) rotate(-40deg);
+  transform: translateY(-1950px) translateX(160px) rotate(-80deg);
 }
 
 #proposal-fact {
   position: absolute;
   left: 250px;
-  top: 70px;
+  top: -70px;
   z-index: 3;
 }
 
@@ -366,14 +366,14 @@ body {
 }
 
 #pingu {
-  transform: translateY(-3300px) translateX(520px) rotate(40deg);
+  transform: translateY(-3340px) translateX(530px) rotate(40deg);
   z-index: 2;
 }
 
 #pingu-fact {
   position: absolute;
-  left: 190px;
-  top: 30px;
+  right: 150px;
+  top: -200px;
 }
 
 #adelie-two {
@@ -439,12 +439,12 @@ body {
 
 #fishing-fact {
   position: absolute;
-  left: 120px;
-  top: 200px;
+  left: 130px;
+  top: -200px;
 }
 
 #selfie {
-  transform: translateY(-4150px) translateX(650px) rotate(110deg);
+  transform: translateY(-4100px) translateX(750px) rotate(110deg);
 }
 
 #selfie-fact {
