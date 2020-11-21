@@ -52,7 +52,7 @@ if (!!tempAbout) {
 
 function exitForHome() {
     animateCSS('.coming-home', 'slideOutDown').then((message) => {
-        window.location.assign('home.html');
+        window.location.assign('index.html');
         document.querySelector('.coming-home').style.display = 'none';
     });
 };
@@ -73,7 +73,7 @@ if (!!tempTip) {
 
 function exitForHomeOops() {
     animateCSS('.coming-home-oops', 'fadeOut').then((message) => {
-        window.location.assign('home.html');
+        window.location.assign('index.html');
         document.querySelector('.coming-home-oops').style.display = 'none';
     });
 };
